@@ -9,85 +9,86 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1>Forte Method</h1>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="img/white_logo_transparent_background.png" alt="Forte Method Logo" class="logo-img">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
+        </ul>
+    </nav>
+</header>
 
+<!-- Hero Section -->
+<section id="hero">
+    <h2>Your Digital Presence, Elevated</h2>
+    <p>Website Design, SEO Optimization, and Freelancing Services</p>
+    <button class="cta-button" onclick="scrollToSection('services')">Get Started</button>
+</section>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h2>Your Digital Presence, Elevated</h2>
-        <p>Website Design, SEO Optimization, and Freelancing Services</p>
-        <button class="cta-button" onclick="scrollToSection('services')">Get Started</button>
-    </section>
+<!-- Services Section -->
+<section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <div class="service" data-aos="fade-left">
+        <h3>Website Design</h3>
+        <p>Creating stunning, responsive websites tailored to your needs.</p>
+    </div>
+    <div class="service" data-aos="fade-left" data-aos-delay="100">
+        <h3>SEO Optimization</h3>
+        <p>Enhancing your online visibility and driving organic traffic.</p>
+    </div>
+    <div class="service" data-aos="fade-left" data-aos-delay="200">
+        <h3>Freelancing</h3>
+        <p>Providing expert freelance services to help you achieve your goals.</p>
+    </div>
+</section>
 
-    <!-- Services Section -->
-    <section id="services" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <div class="service" data-aos="fade-left">
-            <h3>Website Design</h3>
-            <p>Creating stunning, responsive websites tailored to your needs.</p>
-        </div>
-        <div class="service" data-aos="fade-left" data-aos-delay="100">
-            <h3>SEO Optimization</h3>
-            <p>Enhancing your online visibility and driving organic traffic.</p>
-        </div>
-        <div class="service" data-aos="fade-left" data-aos-delay="200">
-            <h3>Freelancing</h3>
-            <p>Providing expert freelance services to help you achieve your goals.</p>
-        </div>
-    </section>
+<!-- About Section -->
+<section id="about" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>At Forte Method, we are passionate about delivering exceptional digital solutions. Our team of experienced professionals is dedicated to helping your business thrive online.</p>
+    <p>
+        <strong>
+            Contact CEO Sophia Forte for all inquiries. 817-992-9321
+        </strong>
+    </p>
+</section>
 
-    <!-- About Section -->
-    <section id="about" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>At Forte Method, we are passionate about delivering exceptional digital solutions. Our team of experienced professionals is dedicated to helping your business thrive online.</p>
-        <p>
-            <strong>
-                Contact CEO Sophia Forte for all inquiries. 817-992-9321
-            </strong>
-        </p>
-    </section>
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Forte Method</p>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Forte Method</p>
-    </footer>
+<!-- Including AOS JS for Scroll Animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
-    <!-- Including AOS JS for Scroll Animations -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- JavaScript for Smooth Scrolling and Form Validation -->
-    <script src="scripts.js"></script>
+<!-- JavaScript for Smooth Scrolling, Form Validation, and Dark Mode -->
+<script src="scripts.js"></script>
 </body>
 </html>

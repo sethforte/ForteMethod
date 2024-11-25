@@ -15,10 +15,9 @@ header {
     padding: 20px;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 2px;
+.logo-img {
+    height: 50px; /* Adjust the height to make the logo smaller */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .nav-links {
@@ -32,14 +31,17 @@ header {
     margin-left: 20px;
 }
 
-.nav-links a {
+.nav-links a, #dark-mode-toggle {
     text-decoration: none;
     color: white;
     font-size: 1em;
     transition: color 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, #dark-mode-toggle:hover {
     color: #ddd; /* Light gray */
 }
 
@@ -98,7 +100,6 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .service:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -153,3 +154,36 @@ footer {
     width: 100%;
     letter-spacing: 2px;
 }
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode #hero {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .service {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+body.dark-mode form {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+/* Media Queries[_{{{CITATION{{{_1{](https://github.com/antydemant/lessons-2020/tree/0c6095f45bfd841914ac8e7e25f8c9df273dea69/02-closure-and-context%2Fhomework%2FREADME.md)[_{{{CITATION{{{_2{](https://github.com/Manuz98/CivitaOTR/tree/2291f0213676c03451292afd879387f981d53004/fortesangallo.php)[_{{{CITATION{{{_3{](https://github.com/chasemc67/Breeze_Site/tree/c65894b40e9d72072b79515904b103a0666f0f7f/Misc%20Shit%2FoldIndex.php)[_{{{CITATION{{{_4{](https://github.com/wallemang98/exploremhg/tree/d80f19eba5715721187579574d674dde0c9d50b1/resources%2Fviews%2Fpages%2Fcontact.blade.php)
